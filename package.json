@@ -1,0 +1,18 @@
+{
+  "name": "my-vacation-days",
+  "version": "1.0.0",
+  "description": "Simple CLI tool to keep track of your vacation days",
+  "main": "vacation.js",
+  "bin": {
+    "vacation": "vacation.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ricardo Fearing",
+  "license": "ISC",
+  "dependencies": {
+    "cli-prompt": "^0.6.0",
+    "moment": "^2.18.1"
+  }
+}
