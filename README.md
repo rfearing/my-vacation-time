@@ -1,4 +1,4 @@
-![My Vacation Days Logo](./logo.png)
+![My Vacation Days Logo](https://github.com/rfearing/my-vacation-time/raw/master/logo.png)
 
 ## What is it?
 
