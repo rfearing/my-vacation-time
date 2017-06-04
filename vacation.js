@@ -85,6 +85,7 @@ if (!timeObject.setup) {
       timeObject.setup = true;
       console.log('Great! You\'re ready to go!');
       fs.writeFile(path.resolve(__dirname, 'vacation.json'), JSON.stringify(timeObject));
+      showInfo();
     },
     console.error
   );
@@ -116,6 +117,8 @@ if(process.argv.indexOf("-h") != -1){
   console.log('   -addTimeOff:    Add (positive number) or subtract (negative number) from your total days given this year.');
   console.log('   -takeTime:      Add (positive number) or subtract (negative number) from the days you\'ve taken off this year.');
   console.log('   -accrued:       Toggle whether your time is accrued throught the year.');
-} else {
+}
+
+if (process.argv.indexOf("-h") === -1 && timeObject.setup) {
   showInfo();
 }
